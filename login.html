@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Event Organizer App</title>
+	<link rel="stylesheet" th:href="@{/css/home.css}" />
+</head>
+<body>
+	<div class="MainHeading">
+	<h1>Welcome to the Event Organizer App</h1> 
+	</div>
+	<div class="login-box">
+
+		  <h1>Login</h1>
+		
+		  <form class="login-form" action="/home">
+		    <input id="username" type="text" name="username" placeholder="Email">
+		    <input id="password" type="password" name="password" placeholder="Password">
+		    <a id="pwdreset" href="#">Forgot password?</a>
+		    <input id="submit" type="submit" name="submit" value="Login">
+		  </form>
+		
+		  <form action="/registration/signup">
+		    <input id="register-button" type="submit" name="register" value="Register">
+		  </form>
+	</div>
+	
+</body>
+</html>
